@@ -1,0 +1,193 @@
+[
+  {
+    "model": "sports.department",
+    "pk": 1,
+    "fields": {
+      "name": "Computer Science"
+    }
+  },
+  {
+    "model": "sports.department",
+    "pk": 2,
+    "fields": {
+      "name": "Mathematics"
+    }
+  },
+  {
+    "model": "sports.department",
+    "pk": 3,
+    "fields": {
+      "name": "Physics"
+    }
+  },
+  {
+    "model": "sports.representative",
+    "pk": 1,
+    "fields": {
+      "name": "John Doe",
+      "email": "john@domain.com",
+      "department": 1
+    }
+  },
+  {
+    "model": "sports.representative",
+    "pk": 2,
+    "fields": {
+      "name": "Jane Smith",
+      "email": "jane@domain.com",
+      "department": 2
+    }
+  },
+  {
+    "model": "sports.team",
+    "pk": 1,
+    "fields": {
+      "name": "Team A",
+      "coach": "Coach A",
+      "representative": 1
+    }
+  },
+  {
+    "model": "sports.team",
+    "pk": 2,
+    "fields": {
+      "name": "Team B",
+      "coach": "Coach B",
+      "representative": 2
+    }
+  },
+  {
+    "model": "sports.player",
+    "pk": 1,
+    "fields": {
+      "name": "Player 1",
+      "age": 22,
+      "position": "Forward",
+      "team": 1
+    }
+  },
+  {
+    "model": "sports.player",
+    "pk": 2,
+    "fields": {
+      "name": "Player 2",
+      "age": 25,
+      "position": "Defender",
+      "team": 2
+    }
+  },
+  {
+    "model": "sports.event",
+    "pk": 1,
+    "fields": {
+      "title": "Football Tournament",
+      "description": "Annual football championship",
+      "start_date": "2024-10-15",
+      "end_date": "2024-10-20"
+    }
+  },
+  {
+    "model": "sports.event",
+    "pk": 2,
+    "fields": {
+      "title": "Carom Championship",
+      "description": "National carom championship",
+      "start_date": "2024-11-01",
+      "end_date": "2024-11-05"
+    }
+  },
+  {
+    "model": "sports.matchdetails",
+    "pk": 1,
+    "fields": {
+      "date": "2024-10-16",
+      "location": "Stadium A",
+      "event": 1
+    }
+  },
+  {
+    "model": "sports.matchdetails",
+    "pk": 2,
+    "fields": {
+      "date": "2024-11-02",
+      "location": "Sports Hall B",
+      "event": 2
+    }
+  },
+  {
+    "model": "sports.football",
+    "pk": 1,
+    "fields": {
+      "duration": 90,
+      "goals_team1": 2,
+      "goals_team2": 1,
+      "match": 1
+    }
+  },
+  {
+    "model": "sports.carom",
+    "pk": 1,
+    "fields": {
+      "rounds": 3,
+      "points_team1": 20,
+      "points_team2": 18,
+      "match": 2
+    }
+  },
+  {
+    "model": "sports.livescore",
+    "pk": 1,
+    "fields": {
+      "score": 2,
+      "match": 1,
+      "team": 1
+    }
+  },
+  {
+    "model": "sports.livescore",
+    "pk": 2,
+    "fields": {
+      "score": 1,
+      "match": 1,
+      "team": 2
+    }
+  },
+  {
+    "model": "sports.result",
+    "pk": 1,
+    "fields": {
+      "match": 1,
+      "winner_team": 1,
+      "loser_team": 2,
+      "draw": false
+    }
+  },
+  {
+    "model": "sports.standing",
+    "pk": 1,
+    "fields": {
+      "position": 1,
+      "team": 1,
+      "event": 1
+    }
+  },
+  {
+    "model": "sports.standing",
+    "pk": 2,
+    "fields": {
+      "position": 2,
+      "team": 2,
+      "event": 1
+    }
+  },
+  {
+    "model": "sports.notice",
+    "pk": 1,
+    "fields": {
+      "title": "Match Schedule",
+      "content": "Next match is on October 16th.",
+      "posted_date": "2024-10-12",
+      "event": 1
+    }
+  }
+]
